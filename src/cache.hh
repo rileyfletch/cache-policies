@@ -12,3 +12,22 @@ typedef struct {
     u_int64_t address;
     char data[64];
 } DataBlock;
+
+enum class ReplacementPolicy {
+    LRU,
+    LFU,
+    FIFO,   
+};
+
+enum class WritePolicy {
+    WRITE_BACK,
+    WRITE_THROUGH, 
+};
+
+enum class CacheSize {
+    CACHE_8K,
+    CACHE_16K,
+    CACHE_32K,
+    CACHE_64K,
+    CACHE_128k,  
+};
